@@ -9,14 +9,14 @@ class Player():
 player1 = Player()
 class Enemy():
     def __init__(self):
-        self.img=pygame.image.load(r'E:\python\project\other\palytheplane\resource\enemy.png')
+        self.img=pygame.image.load('./resource/enemy.png')
         self.x=random.randint(200,600)
         self.y=random.randint(50,100)
         self.step=random.randint(2,4)
 class Bullet():
         def __init__(self):
             self.img = pygame.image.load(
-                r'E:\python\project\other\palytheplane\resource\bullet.png')
+                './resource/bullet.png')
             self.x = player1.player_x
             self.y = player1.player_y + 10
             self.step = 10
