@@ -4,12 +4,12 @@ import Role
 import Operate
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption('打飞机')
-icon = pygame.image.load(r'E:\python\project\other\palytheplane\resource\ufo.png')
+pygame.display.set_caption('Plane_fighter')
+icon = pygame.image.load('./resource/ufo.png')
 pygame.display.set_icon(icon)
-bg = pygame.image.load(r'E:\python\project\other\palytheplane\resource\bg.png')
+bg = pygame.image.load('./resourcebg.png')
 player = pygame.image.load(
-    r'E:\python\project\other\palytheplane\resource\player.png')
+    './resource/player.png')
 s=Operate.Operate()
 font=pygame.font.Font('freesansbold.ttf',32)
 def show_time():
